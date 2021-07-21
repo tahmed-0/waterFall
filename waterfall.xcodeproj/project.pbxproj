@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		E22A268226A7EAFE000161A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E22A268026A7EAFE000161A8 /* Main.storyboard */; };
 		E22A268426A7EAFF000161A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E22A268326A7EAFF000161A8 /* Assets.xcassets */; };
 		E22A268726A7EAFF000161A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E22A268526A7EAFF000161A8 /* LaunchScreen.storyboard */; };
+		E22A269126A7EC80000161A8 /* CHTCollectionViewWaterfallLayout in Frameworks */ = {isa = PBXBuildFile; productRef = E22A269026A7EC80000161A8 /* CHTCollectionViewWaterfallLayout */; };
+		E22A269426A7ED3A000161A8 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22A269326A7ED3A000161A8 /* ImageCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,7 @@
 		E22A268326A7EAFF000161A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E22A268626A7EAFF000161A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E22A268826A7EAFF000161A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E22A269326A7ED3A000161A8 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E22A269126A7EC80000161A8 /* CHTCollectionViewWaterfallLayout in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +67,7 @@
 				E22A268326A7EAFF000161A8 /* Assets.xcassets */,
 				E22A268526A7EAFF000161A8 /* LaunchScreen.storyboard */,
 				E22A268826A7EAFF000161A8 /* Info.plist */,
+				E22A269326A7ED3A000161A8 /* ImageCollectionViewCell.swift */,
 			);
 			path = waterfall;
 			sourceTree = "<group>";
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = waterfall;
+			packageProductDependencies = (
+				E22A269026A7EC80000161A8 /* CHTCollectionViewWaterfallLayout */,
+			);
 			productName = waterfall;
 			productReference = E22A267726A7EAFE000161A8 /* waterfall.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +118,9 @@
 				Base,
 			);
 			mainGroup = E22A266E26A7EAFE000161A8;
+			packageReferences = (
+				E22A268F26A7EC80000161A8 /* XCRemoteSwiftPackageReference "CHTCollectionViewWaterfallLayout" */,
+			);
 			productRefGroup = E22A267826A7EAFE000161A8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,6 +150,7 @@
 			files = (
 				E22A267F26A7EAFE000161A8 /* ViewController.swift in Sources */,
 				E22A267B26A7EAFE000161A8 /* AppDelegate.swift in Sources */,
+				E22A269426A7ED3A000161A8 /* ImageCollectionViewCell.swift in Sources */,
 				E22A267D26A7EAFE000161A8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,7 +228,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -271,7 +283,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -289,6 +301,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3NPC3GMLYQ;
 				INFOPLIST_FILE = waterfall/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +321,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3NPC3GMLYQ;
 				INFOPLIST_FILE = waterfall/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -341,6 +355,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E22A268F26A7EC80000161A8 /* XCRemoteSwiftPackageReference "CHTCollectionViewWaterfallLayout" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AfrazCodes/CHTCollectionViewWaterfallLayout";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.8;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E22A269026A7EC80000161A8 /* CHTCollectionViewWaterfallLayout */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E22A268F26A7EC80000161A8 /* XCRemoteSwiftPackageReference "CHTCollectionViewWaterfallLayout" */;
+			productName = CHTCollectionViewWaterfallLayout;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E22A266F26A7EAFE000161A8 /* Project object */;
 }
